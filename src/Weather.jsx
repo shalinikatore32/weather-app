@@ -7,7 +7,7 @@ const Weather = () => {
   const [city, setCity] = useState("Bhokardan"); // Default city
   const [inputCity, setInputCity] = useState("");
 
-  const apiKey = "92f514a7ef596ba6cedab3168f904660"; // Replace with your OpenWeatherMap API key
+  const apiKey = process.env.REACT_APP_API_KEY; // Replace with your OpenWeatherMap API key
 
   useEffect(() => {
     const fetchWeatherData = async () => {
